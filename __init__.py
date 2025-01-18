@@ -1,5 +1,5 @@
 bl_info = {
-    "name" : "CY's VRC addon",
+    "name" : "CY",
     "author" : "CYkillone",
     "version" : (1, 0),
     "blender" : (4, 30, 2),

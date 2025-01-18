@@ -3,6 +3,7 @@ import bpy
 from bpy.types import Panel
 
 
+category_name = "CY"
 
 
 class Model_PT_Panel(Panel):
@@ -10,7 +11,7 @@ class Model_PT_Panel(Panel):
     bl_idname = "Model_PT_Panel_01"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = "CY's Addon"
+    bl_category = category_name
     
     def draw(self, context):
         
@@ -30,8 +31,8 @@ class Model_Options_PT_Panel(Panel):
     bl_idname = "Model_Options_PT_TestPanel"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = "CY's Addon"
-    bl_parent_id = "Model_PT_Panel_01"
+    bl_category = category_name
+    
     
     def draw(self, context):
         
@@ -50,8 +51,8 @@ class Import_Model_PT_Panel(Panel):
     bl_idname = "Import_Model_PT_Panel_01"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = "CY's Addon"
-    bl_parent_id = "Model_PT_Panel_01"
+    bl_category = category_name
+    
     
     
     def draw(self, context):
